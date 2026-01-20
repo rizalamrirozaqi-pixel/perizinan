@@ -1,0 +1,17 @@
+# Mengaktifkan URL Rewriting
+RewriteEngine on
+
+# Mencegah orang melihat isi folder
+Options -Indexes
+
+# =======================================================
+# BAGIAN TERPENTING ADA DI SINI:
+# =======================================================
+
+# Jika yang diminta BUKAN (!) file (-f) yang ada...
+RewriteCond %{REQUEST_FILENAME} !-f
+# ...dan JIKA yang diminta BUKAN (!) direktori (-d) yang ada...
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ...MAKA BARU kirim permintaan itu ke index.php
+RewriteRule . index.php

@@ -1,0 +1,514 @@
+2025-12-06 06:58:36 [::1][101][58d3ba6884884490839aea993650f802][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $privilegeOptions in D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\views\default\index.php:190
+Stack trace:
+#0 D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\views\default\index.php(190): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 190)
+#1 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(348): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#3 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController))
+#4 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(437): yii\base\View->render('index', Array, Object(app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController))
+#5 D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController.php(133): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController->actionIndex()
+#7 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(187): yii\base\InlineAction->runWithParams(Array)
+#9 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin_khusus/re...', Array)
+#11 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\xampp\htdocs\PHP\YII2\perizinan5\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-12-06 06:58:36 [::1][101][58d3ba6884884490839aea993650f802][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '58d3ba6884884490839aea993650f802'
+    '_identity' => '0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba:2:{i:0;s:9:\"_identity\";i:1;s:25:\"[\"101\",\"testKey\",2592000]\";}'
+    '_csrf' => '623d0480f66ecf7abdfcfeccb0096ba2ecef90ef384ad1417155b370386f959fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sCEIZi7-T9kj9jAwFhaHf1qZbJHti_xU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '101'
+    '__authKey' => 'testKey'
+    'referensi_jenis_izin_khusus_data' => [
+        0 => [
+            'id' => 1
+            'nama_jenis_izin' => 'Izin Mendirikan Bangunan (IMB)'
+            'sektor' => 'Pekerjaan umum dan perumahan rakyat'
+            'lama_proses' => 7
+            'berbayar' => 'T'
+            'icon' => 'imb.png'
+            'terstruktur' => 'T'
+            'is_aktif' => 'T'
+        ]
+        1 => [
+            'id' => 2
+            'nama_jenis_izin' => 'Izin Lokasi'
+            'sektor' => 'Pekerjaan umum dan perumahan rakyat'
+            'lama_proses' => 14
+            'berbayar' => 'F'
+            'icon' => 'lokasi.png'
+            'terstruktur' => 'T'
+            'is_aktif' => 'T'
+        ]
+        2 => [
+            'id' => 3
+            'nama_jenis_izin' => 'Surat Izin Usaha Perdagangan (SIUP)'
+            'sektor' => 'Perdagangan'
+            'lama_proses' => 3
+            'berbayar' => 'F'
+            'icon' => 'store.png'
+            'terstruktur' => 'F'
+            'is_aktif' => 'T'
+        ]
+    ]
+    'referensi_jenis_permohonan_data' => [
+        0 => [
+            'id' => 1
+            'id_jenis_izin' => 1
+            'nama_permohonan' => 'Izin Mendirikan Bangunan (IMB)'
+            'nama_izin_display' => 'BARU'
+            'register' => 'IMB-001'
+            'is_aktif' => 'T'
+        ]
+        1 => [
+            'id' => 2
+            'id_jenis_izin' => 2
+            'nama_permohonan' => 'Izin Lokasi'
+            'nama_izin_display' => 'BARU'
+            'register' => 'IL-001'
+            'is_aktif' => 'T'
+        ]
+        2 => [
+            'id' => 3
+            'id_jenis_izin' => 3
+            'nama_permohonan' => 'Izin Gangguan / HO'
+            'nama_izin_display' => 'DAFTAR ULANG'
+            'register' => 'HO-DU'
+            'is_aktif' => 'T'
+        ]
+        3 => [
+            'id' => 4
+            'id_jenis_izin' => 4
+            'nama_permohonan' => 'Izin Gangguan / HO'
+            'nama_izin_display' => 'BALIK NAMA'
+            'register' => 'HO-BN'
+            'is_aktif' => 'T'
+        ]
+    ]
+    'referensi_pengguna_data' => [
+        0 => [
+            'id' => 1
+            'username' => 'admin'
+            'password' => '123456'
+            'nama_lengkap' => 'Administrator Sistem'
+            'nip' => '-'
+            'unit_kerja' => '-'
+            'blok_sistem' => 'Admin'
+        ]
+        1 => [
+            'id' => 2
+            'username' => 'dpmptsp'
+            'password' => '123456'
+            'nama_lengkap' => 'Admin Dinas'
+            'nip' => '198001012005011001'
+            'unit_kerja' => 'DPMPTSP'
+            'blok_sistem' => 'Admin Khusus'
+        ]
+        2 => [
+            'id' => 3
+            'username' => 'bo_teknis'
+            'password' => '123456'
+            'nama_lengkap' => 'Staf Teknis'
+            'nip' => '199002022015021002'
+            'unit_kerja' => 'Back Office'
+            'blok_sistem' => 'Back Office'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53200'
+    'SERVER_SOFTWARE' => 'PHP/8.4.8 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '7777'
+    'REQUEST_URI' => '/admin_khusus/referensi/referensi_pengguna'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web\\index.php'
+    'PATH_INFO' => '/admin_khusus/referensi/referensi_pengguna'
+    'PHP_SELF' => '/index.php/admin_khusus/referensi/referensi_pengguna'
+    'HTTP_HOST' => 'localhost:7777'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:7777/admin_khusus/referensi/referensi_jenis_izin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=58d3ba6884884490839aea993650f802; _identity=0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A25%3A%22%5B%22101%22%2C%22testKey%22%2C2592000%5D%22%3B%7D; _csrf=623d0480f66ecf7abdfcfeccb0096ba2ecef90ef384ad1417155b370386f959fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sCEIZi7-T9kj9jAwFhaHf1qZbJHti_xU%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1765004316.8104
+    'REQUEST_TIME' => 1765004316
+]
+2025-12-06 06:59:21 [::1][101][a6a8a8139a302159fede852cd197b1e4][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $privilegeOptions in D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\views\default\index.php:190
+Stack trace:
+#0 D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\views\default\index.php(190): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 190)
+#1 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(348): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#3 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController))
+#4 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(437): yii\base\View->render('index', Array, Object(app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController))
+#5 D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController.php(133): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController->actionIndex()
+#7 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(187): yii\base\InlineAction->runWithParams(Array)
+#9 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin_khusus/re...', Array)
+#11 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\xampp\htdocs\PHP\YII2\perizinan5\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-12-06 06:59:21 [::1][101][a6a8a8139a302159fede852cd197b1e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'a6a8a8139a302159fede852cd197b1e4'
+    '_identity' => '0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba:2:{i:0;s:9:\"_identity\";i:1;s:25:\"[\"101\",\"testKey\",2592000]\";}'
+    '_csrf' => 'd7d4aef69ae189339c5d6c971a01d76a1720508528c6170bcf5e4af481cbc5a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tphbujR0xDTHMgZGCFuwNwCZERLfdZ7V\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '101'
+    '__authKey' => 'testKey'
+    'referensi_pengguna_data' => [
+        0 => [
+            'id' => 1
+            'username' => 'admin'
+            'password' => '123456'
+            'nama_lengkap' => 'Administrator Sistem'
+            'nip' => '-'
+            'unit_kerja' => '-'
+            'blok_sistem' => 'Admin'
+        ]
+        1 => [
+            'id' => 2
+            'username' => 'dpmptsp'
+            'password' => '123456'
+            'nama_lengkap' => 'Admin Dinas'
+            'nip' => '198001012005011001'
+            'unit_kerja' => 'DPMPTSP'
+            'blok_sistem' => 'Admin Khusus'
+        ]
+        2 => [
+            'id' => 3
+            'username' => 'bo_teknis'
+            'password' => '123456'
+            'nama_lengkap' => 'Staf Teknis'
+            'nip' => '199002022015021002'
+            'unit_kerja' => 'Back Office'
+            'blok_sistem' => 'Back Office'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56792'
+    'SERVER_SOFTWARE' => 'PHP/8.4.8 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '7777'
+    'REQUEST_URI' => '/admin_khusus/referensi/referensi_pengguna'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web\\index.php'
+    'PATH_INFO' => '/admin_khusus/referensi/referensi_pengguna'
+    'PHP_SELF' => '/index.php/admin_khusus/referensi/referensi_pengguna'
+    'HTTP_HOST' => 'localhost:7777'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:7777/admin_khusus/dashboard/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=a6a8a8139a302159fede852cd197b1e4; _identity=0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A25%3A%22%5B%22101%22%2C%22testKey%22%2C2592000%5D%22%3B%7D; _csrf=d7d4aef69ae189339c5d6c971a01d76a1720508528c6170bcf5e4af481cbc5a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tphbujR0xDTHMgZGCFuwNwCZERLfdZ7V%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1765004361.3888
+    'REQUEST_TIME' => 1765004361
+]
+2025-12-06 06:59:51 [::1][101][a6a8a8139a302159fede852cd197b1e4][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $privilegeOptions in D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController.php:139
+Stack trace:
+#0 D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController.php(139): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 139)
+#1 [internal function]: app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController->actionIndex()
+#2 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(187): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#5 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin_khusus/re...', Array)
+#6 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\PHP\YII2\perizinan5\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2025-12-06 06:59:51 [::1][101][a6a8a8139a302159fede852cd197b1e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'a6a8a8139a302159fede852cd197b1e4'
+    '_identity' => '0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba:2:{i:0;s:9:\"_identity\";i:1;s:25:\"[\"101\",\"testKey\",2592000]\";}'
+    '_csrf' => 'd7d4aef69ae189339c5d6c971a01d76a1720508528c6170bcf5e4af481cbc5a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tphbujR0xDTHMgZGCFuwNwCZERLfdZ7V\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '101'
+    '__authKey' => 'testKey'
+    'referensi_pengguna_data' => [
+        0 => [
+            'id' => 1
+            'username' => 'admin'
+            'password' => '123456'
+            'nama_lengkap' => 'Administrator Sistem'
+            'nip' => '-'
+            'unit_kerja' => '-'
+            'blok_sistem' => 'Admin'
+        ]
+        1 => [
+            'id' => 2
+            'username' => 'dpmptsp'
+            'password' => '123456'
+            'nama_lengkap' => 'Admin Dinas'
+            'nip' => '198001012005011001'
+            'unit_kerja' => 'DPMPTSP'
+            'blok_sistem' => 'Admin Khusus'
+        ]
+        2 => [
+            'id' => 3
+            'username' => 'bo_teknis'
+            'password' => '123456'
+            'nama_lengkap' => 'Staf Teknis'
+            'nip' => '199002022015021002'
+            'unit_kerja' => 'Back Office'
+            'blok_sistem' => 'Back Office'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63067'
+    'SERVER_SOFTWARE' => 'PHP/8.4.8 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '7777'
+    'REQUEST_URI' => '/admin_khusus/referensi/referensi_pengguna'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web\\index.php'
+    'PATH_INFO' => '/admin_khusus/referensi/referensi_pengguna'
+    'PHP_SELF' => '/index.php/admin_khusus/referensi/referensi_pengguna'
+    'HTTP_HOST' => 'localhost:7777'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:7777/admin_khusus/dashboard/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=a6a8a8139a302159fede852cd197b1e4; _identity=0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A25%3A%22%5B%22101%22%2C%22testKey%22%2C2592000%5D%22%3B%7D; _csrf=d7d4aef69ae189339c5d6c971a01d76a1720508528c6170bcf5e4af481cbc5a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tphbujR0xDTHMgZGCFuwNwCZERLfdZ7V%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1765004391.1582
+    'REQUEST_TIME' => 1765004391
+]
+2025-12-06 07:47:56 [::1][101][a6a8a8139a302159fede852cd197b1e4][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $refTugasBlokRoute in D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\views\layouts\main.php:132
+Stack trace:
+#0 D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\views\layouts\main.php(132): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 132)
+#1 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(348): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#3 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(452): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController))
+#4 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(438): yii\base\Controller->renderContent('\n<div class="ma...')
+#5 D:\xampp\htdocs\PHP\YII2\perizinan5\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController.php(134): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\admin_khusus\referensi\referensi_pengguna\controllers\DefaultController->actionIndex()
+#7 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Controller.php(187): yii\base\InlineAction->runWithParams(Array)
+#9 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#10 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin_khusus/re...', Array)
+#11 D:\xampp\htdocs\PHP\YII2\perizinan5\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\xampp\htdocs\PHP\YII2\perizinan5\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2025-12-06 07:47:55 [::1][101][a6a8a8139a302159fede852cd197b1e4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'a6a8a8139a302159fede852cd197b1e4'
+    '_identity' => '0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba:2:{i:0;s:9:\"_identity\";i:1;s:25:\"[\"101\",\"testKey\",2592000]\";}'
+    '_csrf' => 'd7d4aef69ae189339c5d6c971a01d76a1720508528c6170bcf5e4af481cbc5a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tphbujR0xDTHMgZGCFuwNwCZERLfdZ7V\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '101'
+    '__authKey' => 'testKey'
+    'referensi_pengguna_data' => [
+        0 => [
+            'id' => 1
+            'username' => 'admin'
+            'password' => '123456'
+            'nama_lengkap' => 'Administrator Sistem'
+            'nip' => '-'
+            'unit_kerja' => '-'
+            'blok_sistem' => 'Admin'
+        ]
+        1 => [
+            'id' => 2
+            'username' => 'dpmptsp'
+            'password' => '123456'
+            'nama_lengkap' => 'Admin Dinas'
+            'nip' => '198001012005011001'
+            'unit_kerja' => 'DPMPTSP'
+            'blok_sistem' => 'Admin Khusus'
+        ]
+        2 => [
+            'id' => 3
+            'username' => 'bo_teknis'
+            'password' => '123456'
+            'nama_lengkap' => 'Staf Teknis'
+            'nip' => '199002022015021002'
+            'unit_kerja' => 'Back Office'
+            'blok_sistem' => 'Back Office'
+        ]
+    ]
+    'referensi_jenis_permohonan_data' => [
+        0 => [
+            'id' => 1
+            'id_jenis_izin' => 1
+            'nama_permohonan' => 'Izin Mendirikan Bangunan (IMB)'
+            'nama_izin_display' => 'BARU'
+            'register' => 'IMB-001'
+            'is_aktif' => 'T'
+        ]
+        1 => [
+            'id' => 2
+            'id_jenis_izin' => 2
+            'nama_permohonan' => 'Izin Lokasi'
+            'nama_izin_display' => 'BARU'
+            'register' => 'IL-001'
+            'is_aktif' => 'T'
+        ]
+        2 => [
+            'id' => 3
+            'id_jenis_izin' => 3
+            'nama_permohonan' => 'Izin Gangguan / HO'
+            'nama_izin_display' => 'DAFTAR ULANG'
+            'register' => 'HO-DU'
+            'is_aktif' => 'T'
+        ]
+        3 => [
+            'id' => 4
+            'id_jenis_izin' => 4
+            'nama_permohonan' => 'Izin Gangguan / HO'
+            'nama_izin_display' => 'BALIK NAMA'
+            'register' => 'HO-BN'
+            'is_aktif' => 'T'
+        ]
+    ]
+    'referensi_jenis_izin_khusus_data' => [
+        0 => [
+            'id' => 1
+            'nama_jenis_izin' => 'Izin Mendirikan Bangunan (IMB)'
+            'sektor' => 'Pekerjaan umum dan perumahan rakyat'
+            'lama_proses' => 7
+            'berbayar' => 'T'
+            'icon' => 'imb.png'
+            'terstruktur' => 'T'
+            'is_aktif' => 'T'
+        ]
+        1 => [
+            'id' => 2
+            'nama_jenis_izin' => 'Izin Lokasi'
+            'sektor' => 'Pekerjaan umum dan perumahan rakyat'
+            'lama_proses' => 14
+            'berbayar' => 'F'
+            'icon' => 'lokasi.png'
+            'terstruktur' => 'T'
+            'is_aktif' => 'T'
+        ]
+        2 => [
+            'id' => 3
+            'nama_jenis_izin' => 'Surat Izin Usaha Perdagangan (SIUP)'
+            'sektor' => 'Perdagangan'
+            'lama_proses' => 3
+            'berbayar' => 'F'
+            'icon' => 'store.png'
+            'terstruktur' => 'F'
+            'is_aktif' => 'T'
+        ]
+    ]
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53595'
+    'SERVER_SOFTWARE' => 'PHP/8.4.8 (Development Server)'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '7777'
+    'REQUEST_URI' => '/admin_khusus/referensi/referensi_pengguna'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\PHP\\YII2\\perizinan5\\web\\index.php'
+    'PATH_INFO' => '/admin_khusus/referensi/referensi_pengguna'
+    'PHP_SELF' => '/index.php/admin_khusus/referensi/referensi_pengguna'
+    'HTTP_HOST' => 'localhost:7777'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:7777/admin_khusus/referensi/referensi_jenis_izin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=a6a8a8139a302159fede852cd197b1e4; _identity=0957efb32a4b37abcbccc5acc22aecb151b56b1afb40d82a9013363303acbe6ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A25%3A%22%5B%22101%22%2C%22testKey%22%2C2592000%5D%22%3B%7D; _csrf=d7d4aef69ae189339c5d6c971a01d76a1720508528c6170bcf5e4af481cbc5a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tphbujR0xDTHMgZGCFuwNwCZERLfdZ7V%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1765007275.7564
+    'REQUEST_TIME' => 1765007275
+]
